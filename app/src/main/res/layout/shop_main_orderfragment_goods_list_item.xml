@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp">
+            <ImageView
+                android:id="@+id/shop_main_orderfragment_goods_list_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/example"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:id="@+id/shop_main_orderfragment_goods_list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/shop_main_orderfragment_goods_list_image"
+                android:text="@string/example_good_name"
+                android:textSize="15sp"
+                android:maxLines="2"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/shop_main_orderfragment_goods_list_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_alignLeft="@id/shop_main_orderfragment_goods_list_name"
+                android:layout_below="@id/shop_main_orderfragment_goods_list_name"
+                android:text="@string/example_salesvolume"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/shop_main_orderfragment_goods_list_salesvolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/shop_main_orderfragment_goods_list_s"
+                android:layout_below="@id/shop_main_orderfragment_goods_list_name"
+                android:text="@string/example_salesvolume_number"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/shop_main_orderfragment_goods_list_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/shop_main_orderfragment_goods_list_name"
+                android:layout_alignBottom="@id/shop_main_orderfragment_goods_list_image"
+                android:text="@string/rmb"
+                android:textColor="@color/themeColor"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/shop_main_orderfragment_goods_list_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/shop_main_orderfragment_goods_list_p"
+                android:layout_alignBottom="@id/shop_main_orderfragment_goods_list_image"
+                android:text="@string/example_dispatch_price"
+                android:textColor="@color/themeColor"
+                android:textSize="15sp"/>
+            <Button
+                android:id="@+id/shop_main_orderfragment_goods_list_add_btn"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:padding="10dp"
+                android:focusable="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/shop_main_orderfragment_goods_list_price"
+                android:background="@drawable/add_btn"/>
+            <TextView
+                android:id="@+id/shop_main_orderfragment_goods_list_number_text"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:layout_toLeftOf="@id/shop_main_orderfragment_goods_list_add_btn"
+                android:layout_alignBottom="@id/shop_main_orderfragment_goods_list_add_btn"
+                android:text="0"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+            <Button
+                android:id="@+id/shop_main_orderfragment_goods_list_minus_btn"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:padding="10dp"
+                android:focusable="false"
+                android:visibility="invisible"
+                android:layout_toLeftOf="@id/shop_main_orderfragment_goods_list_number_text"
+                android:layout_alignBottom="@id/shop_main_orderfragment_goods_list_price"
+                android:background="@drawable/minus_btn"/>
+
+
+
+        </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize"
+        android:orientation="horizontal"
+        android:padding="@dimen/actionPadding"
+        android:gravity="center"
+        android:background="@color/themeColor">
+        <ImageView
+            android:id="@+id/choose_location_map_back_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:src="@drawable/leftwhite"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/choose_location"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:visibility="invisible"
+            android:src="@drawable/leftwhite"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/choose_map_local_city_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:gravity="center"
+            android:text="@string/local_city"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/choose_location_map_down_image"
+            android:layout_width="8dp"
+            android:layout_height="5dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/rdown" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner"
+            android:gravity="center_vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/search" />
+
+            <EditText
+                android:id="@+id/chhoose_map_search_location_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/hint_search"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/choose_map_search_btn"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:background="@drawable/login_button_selector"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/spilt"/>
+
+    <LinearLayout
+        android:id="@+id/choose_location_map_city_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/choose_location_map_now_city_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/local_city"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/local_location_city" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/choose_location__map_city_linear_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/choose_location_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <ListView
+        android:id="@+id/choose_map_location_list"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+</LinearLayout>

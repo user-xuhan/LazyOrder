@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize"
+        android:orientation="horizontal"
+        android:padding="@dimen/actionPadding"
+        android:gravity="center_vertical"
+        android:background="@color/themeColor">
+        <ImageView
+            android:id="@+id/my_collect_back_image"
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/leftwhite"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/my_collect"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="35dp"
+            android:paddingRight="20dp" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/my_collect_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"/>
+</LinearLayout>

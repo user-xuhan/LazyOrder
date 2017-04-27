@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="15dp"
+    android:background="@color/white">
+        <TextView
+            android:id="@+id/shop_main_orderfragment_popwindow_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/example_good_name"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rmb"
+            android:textSize="15sp"
+            android:textColor="@color/themeColor"/>
+        <TextView
+            android:id="@+id/shop_main_orderfragment_popwindow_list_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="@string/example_start_price"
+            android:textSize="15sp"
+            android:textColor="@color/themeColor"/>
+
+        <Button
+            android:id="@+id/shop_main_orderfragment_popwindow_list_minus_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/minus_btn"/>
+        <TextView
+            android:id="@+id/shop_main_orderfragment_popwindow_list_number_text"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/shop_main_orderfragment_popwindow_list_add_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/add_btn"/>
+</LinearLayout>
