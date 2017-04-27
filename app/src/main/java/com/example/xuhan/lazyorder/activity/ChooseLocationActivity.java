@@ -192,7 +192,6 @@ public class ChooseLocationActivity extends BaseActivity implements View.OnClick
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if(true){};
         ChooseLocationAdapter.stringList.clear();
         ChooseLocationAdapter.locationList.clear();
         if (mLocationClient.isStarted()) {
